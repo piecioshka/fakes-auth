@@ -1,0 +1,25 @@
+{
+    "private": true,
+    "name": "fakes-auth",
+    "version": "1.0.0",
+    "description": "",
+    "license": "MIT",
+    "author": {
+        "name": "Piotr Kowalski",
+        "email": "piecioshka@gmail.com",
+        "url": "https://piecioshka.pl/"
+    },
+    "scripts": {
+        "start": "node src/app.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "morgan": "^1.9.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/piecioshka/fakes-auth.git"
+    }
+}
