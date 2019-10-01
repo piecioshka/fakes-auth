@@ -10,13 +10,24 @@ const HOST = process.env.HOST || '0.0.0.0';
 app.use(cors());
 app.use(morgan('dev'));
 
-app.get('/', (req, res) => {
-    res.json({ hint: 'Use HTTP POST method' });
-});
+const users = [
+    { login: 'admin', pass: 'admin' }
+];
 
-app.post('/', (req, res) => {
-    console.log(req.headers);
-    res.json({ hint: 'Use HTTP POST method' });
+function auth(token) {
+    const decodedToken = Buffer.from(token, 'base64').toString('utf-8');
+    const [login, pass] = decodedToken.split(':');
+    const NOT_FOUND_INDEX = -1;
+    const index = users.findIndex((user) => {
+        return user.login === login && user.pass === pass;
+    });
+    return (index !== NOT_FOUND_INDEX);
+}
+
+app.get('/', (req, res) => {
+    const token = (req.headers.authorization || '').replace('Barear ', '');
+    const status = auth(token);
+    res.json({ auth: status });
 });
 
 app.listen(PORT, () => {
