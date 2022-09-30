@@ -4,12 +4,12 @@ Node.js app which authorize user via `Authorization: Bearer XXX` HTTP header.
 
 ## Demo 🎉
 
-* <https://fakes-auth.herokuapp.com/>
+* <https://fakes-auth.piecioshka.io/>
 
 ## Example
 
 ```bash
-curl -H "Authorization: Bearer YWRtaW46YWRtaW4=" https://fakes-auth.herokuapp.com/
+curl -H "Authorization: Bearer YWRtaW46YWRtaW4=" https://fakes-auth.piecioshka.io/
 # base64( `login:pass` )
 # base64( `admin:admin` ) = `YWRtaW46YWRtaW4=`
 ```
