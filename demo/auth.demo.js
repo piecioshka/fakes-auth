@@ -7,7 +7,7 @@ async function makeRequest(url, options) {
 }
 
 async function main() {
-  const AUTH_URL = "http://localhost:4000";
+  const AUTH_URL = "https://fakes-auth.piecioshka.io";
   const response = await makeRequest(AUTH_URL, {
     headers: {
       authorization: "Bearer " + encode("admin:admin"),
