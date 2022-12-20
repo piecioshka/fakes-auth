@@ -21,13 +21,9 @@ curl -H "Authorization: Bearer YWRtaW46YWRtaW4=" https://fakes-auth.piecioshka.i
 
 ## How to run with `PM2`?
 
-1. Create a file `ecosystem.config.js`
-2. Run command:
-
-  ```bash
-  > cd fakes/
-  > pm2 start ecosystem.config.js
-  ```
+```bash
+pm2 start ecosystem.config.js
+```
 
 ## How to run local?
 
