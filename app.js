@@ -29,7 +29,7 @@ app.get("/", (req, res) => {
   const decodedToken = decodeToken(token);
   const [login, pass] = decodedToken.split(":");
   const status = auth(login, pass);
-  res.json({ auth: status });
+  res.set({ "content-type": "application/json" }).send({ auth: status }).end();
 });
 
 app.listen(PORT, () => {
