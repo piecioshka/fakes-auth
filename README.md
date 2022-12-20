@@ -4,7 +4,7 @@ Node.js app which authorize user via `Authorization: Bearer XXX` HTTP header.
 
 ## Demo 🎉
 
-* <https://fakes-auth.piecioshka.io/>
+<https://fakes-auth.piecioshka.io/>
 
 ## Example
 
