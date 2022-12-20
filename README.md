@@ -18,3 +18,19 @@ curl -H "Authorization: Bearer YWRtaW46YWRtaW4=" https://fakes-auth.piecioshka.i
 * Decode/encode with npm packages https://www.npmjs.com/package/js-base64
 
 [Example in JavaScript](/demo/auth.demo.js)
+
+## How to run with `PM2`?
+
+1. Create a file `ecosystem.config.js`
+2. Run command:
+
+  ```bash
+  > cd fakes/
+  > pm2 start ecosystem.config.js
+  ```
+
+## How to run local?
+
+```bash
+PORT=4000 npm start
+```
