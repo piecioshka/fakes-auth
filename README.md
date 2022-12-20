@@ -17,4 +17,4 @@ curl -H "Authorization: Bearer YWRtaW46YWRtaW4=" https://fakes-auth.piecioshka.i
 * Decode/encode online https://www.base64decode.org/
 * Decode/encode with npm packages https://www.npmjs.com/package/js-base64
 
-[Example in JavaScript](/auth.js)
+[Example in JavaScript](/demo/auth.demo.js)
