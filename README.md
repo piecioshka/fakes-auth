@@ -25,7 +25,7 @@ curl -H "Authorization: Bearer YWRtaW46YWRtaW4=" https://fakes-auth.piecioshka.i
 pm2 start ecosystem.config.js
 ```
 
-## How to run local?
+## How to run on local?
 
 ```bash
 PORT=4000 npm start
