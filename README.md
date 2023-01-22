@@ -2,7 +2,7 @@
 
 Node.js app which authorize user via `Authorization: Bearer XXX` HTTP header.
 
-## Demo 🎉
+## Preview 🎉
 
 <https://fakes-auth.piecioshka.io/>
 
