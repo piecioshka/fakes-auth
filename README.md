@@ -10,7 +10,7 @@ Node.js app which authorize user via `Authorization: Bearer XXX` HTTP header.
 
 ```bash
 curl -H "Authorization: Bearer YWRtaW5AZ21haWwuY29tOmFkbWlu" https://fakes-auth.piecioshka.io/
-# base64( `email:pass` )
+# base64( `email:password` )
 # base64( `admin@gmail.com:admin` ) = `YWRtaW5AZ21haWwuY29tOmFkbWlu`
 ```
 
